@@ -5,7 +5,7 @@ JELASTICBASIC_BIN_DIR=${OPENSHIFT_JELASTICBASIC_DIR}/versions/1.0/jelasticbasic/
 
 
 function is_running() {
-    pgrep jelasticbasic  > /dev/null 2>&1; e
+    pgrep jelasticbasic  > /dev/null 2>&1;
     return $?
 }
 
