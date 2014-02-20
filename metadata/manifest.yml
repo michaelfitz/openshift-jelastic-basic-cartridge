@@ -8,6 +8,9 @@ License-Url:
 Vendor: Jelastic
 Cartridge-Version: 1.0
 Cartridge-Vendor: jelasticbasic
+Categories:
+  - service
+  - embedded
 Source-Url: https://github.com/ihorman/openshift-jelastic-basic-cartridge.git
 Categories:
 Website: http://jelastic.com/
