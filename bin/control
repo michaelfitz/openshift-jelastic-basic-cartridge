@@ -22,7 +22,7 @@ function start() {
         exit 0
     fi
 
-    ${JELASTICBASIC_BIN_DIR}/jelasticbasic -p $OPENSHIFT_NEO4J_APP_PORT -r ${OPENSHIFT_JELASTICBASIC_DIR}/versions/
+    ${JELASTICBASIC_BIN_DIR}/jelasticbasic -p ${OPENSHIFT_JELASTICBASIC_APP_PORT} -r ${OPENSHIFT_JELASTICBASIC_DIR}/versions/
 
     ret=$?
     if [ $ret -ne 0 ]; then
