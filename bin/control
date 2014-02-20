@@ -22,7 +22,8 @@ function start() {
         exit 0
     fi
 
-    ${JELASTICBASIC_BIN_DIR}/jelasticbasic -p ${OPENSHIFT_JELASTICBASIC_APP_PORT} -r ${OPENSHIFT_JELASTICBASIC_DIR}/versions/ &
+    echo "This is basic jelastic cartridge" > /tmp/index.html
+    ${JELASTICBASIC_BIN_DIR}/jelasticbasic -p ${OPENSHIFT_JELASTICBASIC_APP_PORT} -r /tmp/ &
 
     ret=$?
     if [ $ret -ne 0 ]; then
