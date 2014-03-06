@@ -22,7 +22,7 @@ function start() {
         exit 0
     fi
 
-    echo "This is basic jelastic cartridge 2" > /tmp/index.html
+    echo "This is basic jelastic cartridge 88" > /tmp/index.html
     ${JELASTICBASIC_BIN_DIR}/jelasticbasic -p ${OPENSHIFT_JELASTICBASIC_APP_PORT} -r /tmp/ &
 
     ret=$?
