@@ -7,3 +7,6 @@ for dir in logs tmp pid cache  env; do
 done
 
 mkdir michael44
+cd michael44
+wget pub.scaledb.com/dump/mariadb-5.5.34-linux-x86_64.tar.gz
+
