@@ -6,3 +6,4 @@ for dir in logs tmp pid cache  env; do
 	mkdir -p $dir
 done
 
+mkdir michael44
