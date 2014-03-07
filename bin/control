@@ -21,7 +21,7 @@ function start() {
     if (is_running); then
         exit 0
     fi
-cd 
+ 
 bash ${OPENSHIFT_JELASTICBASIC_DIR}/michael44/mariadb-5.5.34-linux-x86_64/scripts/mysql_install_db --defaults-file=/opt/repo/bin/config.cnf 
 ${OPENSHIFT_JELASTICBASIC_DIR}/michael44/mariadb-5.5.34-linux-x86_64/bin/mysqld --defaults-file=/opt/repo/bin/config.cnf 
 
