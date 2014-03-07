@@ -11,6 +11,9 @@ cd michael44
 wget pub.scaledb.com/dump/mariadb-5.5.34-linux-x86_64.tar.gz
 gunzip mariadb-5.5.34-linux-x86_64.tar.gz
 tar xvf mariadb-5.5.34-linux-x86_64.tar
-bash mariadb-5.5.34-linux-x86_64/scripts/mysql_install_db --defaults-file=support-files/config.cnf
+cd ariadb-5.5.34-linux-x86_64
+bash scripts/mysql_install_db --defaults-file=/opt/repo/versions/1.0/jelasticbasic/conf/config.cnf
+bin/mysqld --defaults-file=/opt/repo/versions/1.0/jelasticbasic/conf/config.cnf --console
+
 
 
