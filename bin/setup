@@ -13,7 +13,7 @@ gunzip mariadb-5.5.34-linux-x86_64.tar.gz
 tar xvf mariadb-5.5.34-linux-x86_64.tar
 cd ariadb-5.5.34-linux-x86_64
 bash scripts/mysql_install_db --defaults-file=/opt/repo/versions/1.0/jelasticbasic/conf/config.cnf
-bin/mysqld --defaults-file=/opt/repo/versions/1.0/jelasticbasic/conf/config.cnf --console
+bin/mysqld --defaults-file=/opt/repo/versions/1.0/jelasticbasic/conf/config.cnf 
 
 
 
