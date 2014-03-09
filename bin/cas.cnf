@@ -1,6 +1,6 @@
-scaledb_data_directory    = ${OPENSHIFT_JELASTICBASIC_DIR}/michael44/scaledb/data
-scaledb_db_directory test = ${OPENSHIFT_JELASTICBASIC_DIR}/michael44/scaledb/data/test
-scaledb_log_directory     = ${OPENSHIFT_JELASTICBASIC_DIR}/michael44/scaledb/logs
+scaledb_data_directory    = /opt/repo/michael44/scaledb/data
+scaledb_db_directory test = /opt/repo/michael44/scaledb/data/test
+scaledb_log_directory     = /opt/repo/michael44/scaledb/logs
 
 scaledb_io_threads = 4
 #scaledb_data_io_flags=2
