@@ -14,7 +14,6 @@ tar xvf mariadb-5.5.34-linux-x86_64.tar
 wget www.scaledb.com/scaledb-latest-mariadb-5.5.34.tar.gz
 gunzip scaledb-latest-mariadb-5.5.34.tar.gz
 tar xvf  scaledb-latest-mariadb-5.5.34.tar
-yum -y install libaio
 mkdir scaledb
 cd scaledb
 mkdir data
@@ -22,5 +21,7 @@ mkdir logs
 mkdir data/CAS1
 mkdir data/test
 mkdir logs/CAS1
+yum -y install libaio
+
 
 
