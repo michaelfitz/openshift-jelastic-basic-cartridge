@@ -1,0 +1,109 @@
+scaledb_data_directory    = ${OPENSHIFT_JELASTICBASIC_DIR}/michael44/scaledb/data
+scaledb_db_directory test = ${OPENSHIFT_JELASTICBASIC_DIR}/michael44/scaledb/data/test
+scaledb_log_directory     = ${OPENSHIFT_JELASTICBASIC_DIR}/michael44/scaledb/logs
+
+scaledb_io_threads = 4
+#scaledb_data_io_flags=2
+#scaledb_logs_io_flags=2
+
+# use nc + ip + port
+# scaledb_service_port = 15000
+
+scaledb_cas_server_ips = 127.0.0.1
+scaledb_cas_server_ports = 13306
+
+# enable for mirrors
+#scaledb_cas_mirror_ips = 127.0.0.1
+#scaledb_cas_mirror_ports = 13307
+
+run_debug_tests = false
+
+scaledb_max_file_handles = 1
+scaledb_enable_optimization = false
+scaledb_slm_threads = 4
+
+scaledb_buffer_size_index = 100M
+scaledb_buffer_size_data = 200M
+scaledb_buffer_size_blob = 10M
+
+scaledb_hash_lookup_size = 100M
+scaledb_internal_version = true
+#setting to 0 will cause hangs
+#scaledb_dead_lock_milliseconds = 3000
+scaledb_dead_lock_milliseconds = 0
+scaledb_max_column_length_in_base_file = 4
+scaledb_cluster_user = root
+
+scaledb_debug_buffer_size = 10000
+
+scaledb_flush_ahead = true
+scaledb_debug = true
+scaledb_debug_interactive=true
+
+scaledb_log_sql = false
+show_memory_usage = false
+
+
+#scaledb_debug_file=stdout
+scaledb_debug_lines_per_file = 1000000
+scaledb_debug_files_count = 2
+scaledb_debug_locking_mode = false
+
+#scaledb_autocommit = 2
+
+slm_debug = false
+slm_debug_interactive = true
+slm_debug_file=stdout
+slm_debug_lines_per_file = 100000
+slm_debug_files_count = 5
+
+#cas_recovery_mode = high
+
+#......................0..0..0..1...1..1..2...2..2..3...3..3..4
+#......................1..4..7..0...4..7..0...4..7..0...4..7..0
+#scaledb_debug_string = 0011001000000000000000000000011000000000
+#scaledb_debug_string = 00000000000000000000000000000000000000000000
+
+
+#define _DEBUG_STORAGE_REQUESTS          1
+#define _DEBUG_STORAGE_IO                        2
+#define _DEBUG_NODE_LOCK_MANAGER         3
+#define _DEBUG_NODE_SLM_LOCK_MANAGER 4  // this flag is used on worker node
+#define _DEBUG_BUFFER_MANAGER            5
+#define _DEBUG_TCP_CLIENT                        6
+#define _DEBUG_NODE_SLM_MESSAGES         7      // this flag is used on worker node
+#define _DEBUG_RECOVER                           8
+#define _DEBUG_QUERY_OUTPUT                      9
+#define _DEBUG_MYSQL_INTERFACE          10
+#define _DEBUG_LOG_MANAGER                      11
+#define _DEBUG_PATH_QUERY                       12
+#define _DEBUG_PATH_INSERT                      13
+#define _DEBUG_PATH_DELETE                      14
+#define _DEBUG_PATH_UPDATE                      15
+#define _DEBUG_ENGINE_DDL                       16
+#define _DEBUG_META_DATA                        17
+#define _DEBUG_BLOCK_SPLIT                      18
+#define _DEBUG_SDB_MANAGER                      19
+#define _DEBUG_SDB_ARRAY                        20
+#define _DEBUG_SDB_BLOCK_NEEDED         21
+#define _DEBUG_OPEN_LOCK_FILES          22
+#define _DEBUG_ENGINE_DML                       23
+#define _DEBUG_QUERY_TRAVERSAL          24
+#define _DEBUG_PATH_INFO                        25
+#define _DEBUG_CAS_MESSAGES                     26
+#define _DEBUG_ROLLBACK                         27
+#define _DEBUG_INIT_SLM                         28
+#define _DEBUG_FAST_LOCK                        29
+#define _DEBUG_SLM_SLM_LOCK_MANAGER     30      // this flag is used on SLM
+#define _DEBUG_SLM_SLM_MESSAGES         31      // this flag is used on SLM
+#define _DEBUG_SLM_L3_COUNTER           32
+#define _DEBUG_PATH_OPTIMIZATION        33
+#define _DEBUG_META_TABLES                      34
+#define _DEBUG_STATISTICS_CALLS         35
+#define _DEBUG_TEST_BLOCK_WRITES        36
+#define _DEBUG_CAS_BUFF                         37
+#define _DEBUG_WRITES_ON_COMMIT         38
+#define _DEBIG_BLOCK_IO                         39
+#define _DEBIG_BLOB                                     40
+#define _DEBIG_QUERY_DEF                        41
+#define _DEBUG_DML_ERRORS                       42
