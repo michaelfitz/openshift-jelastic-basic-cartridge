@@ -22,11 +22,11 @@ scaledb_max_file_handles = 1
 scaledb_enable_optimization = false
 scaledb_slm_threads = 4
 
-scaledb_buffer_size_index = 100M
-scaledb_buffer_size_data = 200M
+scaledb_buffer_size_index = 10M
+scaledb_buffer_size_data = 20M
 scaledb_buffer_size_blob = 10M
 
-scaledb_hash_lookup_size = 100M
+scaledb_hash_lookup_size = 10M
 scaledb_internal_version = true
 #setting to 0 will cause hangs
 #scaledb_dead_lock_milliseconds = 3000
