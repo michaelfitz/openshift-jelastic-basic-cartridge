@@ -1,0 +1,6 @@
+scaledb_cluster_port=3306
+
+scaledb_cas_config_ips = 127.0.0.1
+scaledb_cas_config_ports = 13306
+
+scaledb_debug_file=stdout
