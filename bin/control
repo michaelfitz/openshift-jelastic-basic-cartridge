@@ -22,12 +22,14 @@ function start() {
         exit 0
     fi
  
- export LD_LIBRARY_PATH="/opt/repo/michael44/scaledb-latest-mariadb-5.5.34/lib:/opt/repo/versions/1.0/jelasticbasic/bin"
+export LD_LIBRARY_PATH="/opt/repo/michael44/scaledb-latest-mariadb-5.5.34/lib:/opt/repo/versions/1.0/jelasticbasic/bin"
  
 ${OPENSHIFT_JELASTICBASIC_DIR}/michael44/mariadb-5.5.34-linux-x86_64/scripts/mysql_install_db   --basedir=${OPENSHIFT_JELASTICBASIC_DIR}/michael44/mariadb-5.5.34-linux-x86_64   --defaults-file=/opt/repo/bin/config.cnf  > t.txt 
 ${OPENSHIFT_JELASTICBASIC_DIR}/michael44/mariadb-5.5.34-linux-x86_64/bin/mysqld --defaults-file=/opt/repo/bin/config.cnf &
-${OPENSHIFT_JELASTICBASIC_DIR}/michael44/scaledb-latest-mariadb-5.5.34/lib/scaledb_slm /opt/repo/bin/slm.cnf &
+
 ${OPENSHIFT_JELASTICBASIC_DIR}/michael44/scaledb-latest-mariadb-5.5.34/lib/scaledb_cas /opt/repo/bin/cas.cnf 127.0.0.1 13306 CAS1 &
+${OPENSHIFT_JELASTICBASIC_DIR}/michael44/scaledb-latest-mariadb-5.5.34/lib/scaledb_slm /opt/repo/bin/slm.cnf &
+
 
 
 
