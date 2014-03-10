@@ -24,7 +24,11 @@ mkdir data/test/CAS1
 mkdir logs/CAS1
 chmod +x /opt/repo/michael44/scaledb-latest-mariadb-5.5.34/lib/scaledb_cas
 chmod +x /opt/repo/michael44/scaledb-latest-mariadb-5.5.34/lib/scaledb_slm
-export LD_LIBRARY_PATH="/opt/repo/michael44/scaledb-latest-mariadb-5.5.34/lib:/opt/repo/versions/1.0/jelasticbasic/bin"
+/opt/repo/michael44/mariadb-5.5.34-linux-x86_64/data
+
+cp /opt/repo/bin/scaledb.cnf /opt/repo/michael44/mariadb-5.5.34-linux-x86_64/data
+
+
 
 
 
