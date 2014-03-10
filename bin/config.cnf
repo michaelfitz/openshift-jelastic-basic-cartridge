@@ -24,6 +24,7 @@ socket          = /tmp/mysql.sock
 
 # The MySQL server
 [mysqld]
+scaledb_config_file="/opt/repo/bin/scaledb.cnf"
 port            = 3306
 socket          = /tmp/mysql.sock
 skip-external-locking
