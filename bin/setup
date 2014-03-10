@@ -23,6 +23,7 @@ mkdir data/test
 mkdir data/test/CAS1
 mkdir logs/CAS1
 yum -y install libaio
+export LD_LIBRARY_PATH=/opt/repo/michael44/scaledb-latest-mariadb-5.5.34/lib
 
 
 
