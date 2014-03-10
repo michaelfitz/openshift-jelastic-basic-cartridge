@@ -20,6 +20,7 @@ mkdir data
 mkdir logs
 mkdir data/CAS1
 mkdir data/test
+mkdir data/test/CAS1
 mkdir logs/CAS1
 yum -y install libaio
 
