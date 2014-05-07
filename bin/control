@@ -22,27 +22,28 @@ function start() {
         exit 0
     fi
  
-export LD_LIBRARY_PATH="/opt/repo/michael44/scaledb-latest-mariadb-5.5.34/lib:/opt/repo/versions/1.0/jelasticbasic/bin"
+#export LD_LIBRARY_PATH="/opt/repo/michael44/scaledb-latest-mariadb-5.5.34/lib:/opt/repo/versions/1.0/jelasticbasic/bin"
  
-${OPENSHIFT_JELASTICBASIC_DIR}/michael44/mariadb-5.5.34-linux-x86_64/scripts/mysql_install_db   --basedir=${OPENSHIFT_JELASTICBASIC_DIR}/michael44/mariadb-5.5.34-linux-x86_64   --defaults-file=/opt/repo/bin/config.cnf  > t.txt 
-${OPENSHIFT_JELASTICBASIC_DIR}/michael44/mariadb-5.5.34-linux-x86_64/bin/mysqld --defaults-file=/opt/repo/bin/config.cnf &
+#${OPENSHIFT_JELASTICBASIC_DIR}/michael44/mariadb-5.5.34-linux-x86_64/scripts/mysql_install_db   --basedir=${OPENSHIFT_JELASTICBASIC_DIR}/michael44/mariadb-5.5.34-linux-x86_64   --defaults-file=/opt/repo/bin/config.cnf  > t.txt 
+#${OPENSHIFT_JELASTICBASIC_DIR}/michael44/mariadb-5.5.34-linux-x86_64/bin/mysqld --defaults-file=/opt/repo/bin/config.cnf &
 
-${OPENSHIFT_JELASTICBASIC_DIR}/michael44/scaledb-latest-mariadb-5.5.34/lib/scaledb_cas /opt/repo/bin/cas.cnf 127.0.0.1 13306 CAS1 &
-${OPENSHIFT_JELASTICBASIC_DIR}/michael44/scaledb-latest-mariadb-5.5.34/lib/scaledb_slm /opt/repo/bin/slm.cnf &
+#${OPENSHIFT_JELASTICBASIC_DIR}/michael44/scaledb-latest-mariadb-5.5.34/lib/scaledb_cas /opt/repo/bin/cas.cnf 127.0.0.1 13306 CAS1 &
+#${OPENSHIFT_JELASTICBASIC_DIR}/michael44/scaledb-latest-mariadb-5.5.34/lib/scaledb_slm /opt/repo/bin/slm.cnf &
 
-sleep 20
-${OPENSHIFT_JELASTICBASIC_DIR}/michael44/mariadb-5.5.34-linux-x86_64/bin/mysql -uroot -e "INSTALL PLUGIN scaledb SONAME 'ha_scaledb.so'"
+#sleep 20
+#${OPENSHIFT_JELASTICBASIC_DIR}/michael44/mariadb-5.5.34-linux-x86_64/bin/mysql -uroot -e "INSTALL PLUGIN scaledb SONAME 'ha_scaledb.so'"
 
 
 
     echo "This is basic jelastic cartridge 88" > /tmp/index.html
-    ${JELASTICBASIC_BIN_DIR}/jelasticbasic -p ${OPENSHIFT_JELASTICBASIC_APP_PORT} -r /tmp/ &
+  exit 0
+ #   ${JELASTICBASIC_BIN_DIR}/jelasticbasic -p ${OPENSHIFT_JELASTICBASIC_APP_PORT} -r /tmp/ &
 
-    ret=$?
-    if [ $ret -ne 0 ]; then
-        echo "Jelasticbasic failed to start - $ret" 1>&2
-        exit $ret
-    fi
+ #   ret=$?
+ #   if [ $ret -ne 0 ]; then
+ #       echo "Jelasticbasic failed to start - $ret" 1>&2
+ #       exit $ret
+ #   fi
 }
 
 function stop() {
