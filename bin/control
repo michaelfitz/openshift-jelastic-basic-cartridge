@@ -48,7 +48,7 @@ function start() {
 
 function stop() {
     if (is_running); then
-#        killall -9 jelasticbasic
+        killall -9 mysql
     fi
 }
 
