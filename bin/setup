@@ -9,24 +9,24 @@ done
 mkdir michael44
 cd michael44
 wget pub.scaledb.com/dump/mariadb-5.5.34-linux-x86_64.tar.gz
-#gunzip mariadb-5.5.34-linux-x86_64.tar.gz
-#tar xvf mariadb-5.5.34-linux-x86_64.tar
-#wget www.scaledb.com/scaledb-latest-mariadb-5.5.34.tar.gz
-#gunzip scaledb-latest-mariadb-5.5.34.tar.gz
-#tar xvf  scaledb-latest-mariadb-5.5.34.tar
-#mkdir scaledb
-#cd scaledb
-#mkdir data
-#mkdir logs
-#mkdir data/CAS1
-#mkdir data/test
-#mkdir data/test/CAS1
-#mkdir logs/CAS1
-#chmod +x /opt/repo/michael44/scaledb-latest-mariadb-5.5.34/lib/scaledb_cas
-#chmod +x /opt/repo/michael44/scaledb-latest-mariadb-5.5.34/lib/scaledb_slm
+gunzip mariadb-5.5.34-linux-x86_64.tar.gz
+tar xvf mariadb-5.5.34-linux-x86_64.tar
+wget www.scaledb.com/scaledb-latest-mariadb-5.5.34.tar.gz
+gunzip scaledb-latest-mariadb-5.5.34.tar.gz
+tar xvf  scaledb-latest-mariadb-5.5.34.tar
+mkdir scaledb
+cd scaledb
+mkdir data
+mkdir logs
+mkdir data/CAS1
+mkdir data/test
+mkdir data/test/CAS1
+mkdir logs/CAS1
+chmod +x /opt/repo/michael44/scaledb-latest-mariadb-5.5.34/lib/scaledb_cas
+chmod +x /opt/repo/michael44/scaledb-latest-mariadb-5.5.34/lib/scaledb_slm
 
-#cp /opt/repo/michael44/scaledb-latest-mariadb-5.5.34/lib/ha_scaledb.so /opt/repo/michael44/mariadb-5.5.34-linux-x86_64/lib/plugin/
-#cp /opt/repo/bin/scaledb.cnf /opt/repo/michael44/mariadb-5.5.34-linux-x86_64/data/
+cp /opt/repo/michael44/scaledb-latest-mariadb-5.5.34/lib/ha_scaledb.so /opt/repo/michael44/mariadb-5.5.34-linux-x86_64/lib/plugin/
+cp /opt/repo/bin/scaledb.cnf /opt/repo/michael44/mariadb-5.5.34-linux-x86_64/data/
 
 
 
